@@ -1,0 +1,23 @@
+
+name: 'Hello Action'
+description: 'Custom JavaScript greeting action'
+author: 'Ibad ur Rehman'
+
+inputs:
+  who-to-greet:
+    description: 'Name of the person to greet'
+    required: true
+    default: 'Ibad ur Rehman'
+
+  greeting:
+    description: 'Greeting message'
+    required: false
+    default: 'Hello'
+
+outputs:
+  message:
+    description: 'Generated greeting message'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
